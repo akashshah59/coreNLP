@@ -26,7 +26,7 @@ downloadCoreNLP = function(outputLoc,
     type=c("base","chinese","english", "french", "german", "spanish")) {
 
   baseURL = "http://nlp.stanford.edu/software/"
-  coreFile = "/stanford-corenlp-full-2018-02-27.zip"
+  coreFile = "/stanford-corenlp-full-2018-02-27"
 
   type = match.arg(type)
   if (missing(outputLoc)) {
