@@ -1,4 +1,4 @@
-# http://nlp.stanford.edu/software/stanford-corenlp-full-2015-01-29.zip
+
 
 volatiles = new.env(parent=emptyenv())
 
@@ -42,7 +42,7 @@ initCoreNLP = function(libLoc, type = c("english", "english_all", "english_fast"
   # Find location of the CoreNLP Libraries
   if (missing(libLoc)) {
     libLoc = paste0(system.file("extdata",package="coreNLP"),
-                    "/stanford-corenlp-full-2015-12-09")
+                    "/stanford-corenlp-full-2018-02-07")
     if (!file.exists(libLoc))
       stop("Please run downloadCoreNLP() in order to install required jar files.")
   }
