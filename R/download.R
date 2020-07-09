@@ -26,7 +26,7 @@ downloadCoreNLP = function(outputLoc,
     type=c("base","chinese","english", "french", "german", "spanish")) {
 
   baseURL = "http://nlp.stanford.edu/software/"
-  coreFile = "/stanford-corenlp-full-2015-12-09"
+  coreFile = "/stanford-corenlp-full-2018-02-27.zip"
 
   type = match.arg(type)
   if (missing(outputLoc)) {
@@ -54,8 +54,8 @@ downloadCoreNLP = function(outputLoc,
       destfile=paste0(outputLoc, coreFile, "/stanford-chinese-corenlp-2016-01-19-models.jar"))
 
   if (type == "english")
-    download.file(paste0(baseURL, "/stanford-english-corenlp-2016-01-10-models.jar"),
-      destfile=paste0(outputLoc, coreFile, "/stanford-english-corenlp-2016-01-10-models.jar"))
+    download.file(paste0(baseURL, "/stanford-english-corenlp-2018-02-27-models.jar"),
+      destfile=paste0(outputLoc, coreFile, "/stanford-english-corenlp-2018-02-27-models.jar"))
 
   if (type == "french")
     download.file(paste0(baseURL, "/stanford-french-corenlp-2016-01-14-models.jar"),
@@ -66,7 +66,7 @@ downloadCoreNLP = function(outputLoc,
       destfile=paste0(outputLoc, coreFile, "/stanford-german-corenlp-2016-01-19-models.jar"))
 
   if (type == "spanish")
-    download.file(paste0(baseURL, "/stanford-spanish-corenlp-2015-10-14-models.jar"),
-      destfile=paste0(outputLoc, coreFile, "/stanford-spanish-corenlp-2015-10-14-models.jar"))
+    download.file(paste0(baseURL, "/stanford-spanish-corenlp-2018-02-27-models.jar"),
+      destfile=paste0(outputLoc, coreFile, "/stanford-spanish-corenlp-2018-02-27-models.jar"))
 
 }
